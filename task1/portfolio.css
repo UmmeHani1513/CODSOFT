@@ -1,1 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #bba5ca;
+  --secondary-color-dark: #10da20;
+  --text-dark: #0d1319;
+  --text-light: #9ca3af;
+  --white: #fefdfd;
+  --max-width: 1200px;
+}
+
+.hero {
+  background-image: url("bgimg.jpg");
+  color: #ac4aee;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  padding: 50px;
+}
+
+.add{
+    text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section__title span {
+  color: var(--secondary-color);
+}
+
+.section__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.btn {
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: purple;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+body {
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  height: 100vh;
+  background-image: url("bgimg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.header__container p {
+  color: var(--text-light);
+  max-width: 400px;
+  margin: 1rem 0;
+}
+
+.header__container h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #bba5ca;
+}
+
+.about{
+  background-color: var(--text-dark);
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about__image,
+.about__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about__image img {
+  max-width: 350px;
+}
+
+.about__details {
+  padding: 2rem 0;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.service,
+footer {
+  background-color: var(--primary-color);
+}
+
+.service__grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.service__card {
+  display: grid;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--text-dark);
+  border-radius: 5px;
+}
+
+.service__card i {
+  font-size: 1.5rem;
+}
+
+.service__card h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.service__card p {
+  color: var(--text-light);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer__details {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+.add p{
+  text-align: center;
+  background-color: #000000;
+}
+/* Media queries */
+
+@media (min-width: 640px) {
+  .section__title {
+    font-size: 2.5rem;
+  }
+
+  .header__container p {
+    margin: 2rem 0;
+  }
+
+  .header__container h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .about__container {
+    flex-direction: row;
+  }
+
+  .about__content {
+    align-items: flex-start;
+  }
+
+  .about__details {
+    text-align: left;
+  }
+
+  .service__grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .header__container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .service__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer__details img{
+  width: 25px;
+  margin-right: 7px;
+  float: left;
+}
 
